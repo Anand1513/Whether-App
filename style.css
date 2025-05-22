@@ -1,39 +1,73 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Segoe UI", sans-serif;
-    background-color: #f0f4f8;
+.box {
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+}
+
+.mainContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  .container {
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #2c3e50;
-  }
-  
-  .card {
-    width: 350px;
-    height: 350px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: #dcefff;
+    font-family: Arial, sans-serif;
+}
+
+.header {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: flex-start; /* Align to the top */
-    padding-top: 30px; /* Space from the top */
-  }
-  
-  .weather-icon {
+    justify-content: center;
+    font-weight: bold;
+}
+
+.header div {
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.picContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.picContainer img {
     width: 100px;
-    height: 100px;
-    align-items: top;
-  }
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.inputContainer input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.inputContainer button {
+    padding: 10px;
+    width: 50%;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.weatherDetails {
+    text-align: center;
+    margin-top: 15px;
+}
